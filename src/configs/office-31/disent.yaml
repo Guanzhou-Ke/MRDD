@@ -1,0 +1,57 @@
+# general setting.
+views: 3
+seed: 1118
+wandb: false
+experiment_name: "office31"
+verbose: false
+note: ' disent'
+project_name: 'CVPR24'
+runtimes: 1
+backbone:
+  type: 'cnn'
+  init_method: 'xavier'
+dataset:
+  name: 'office-31'
+  root: '/data/home/scv9554/run/guanzhouke/my_experiments/MyData/Office31'
+  class_num: 31
+train:
+  epochs: 200
+  # 64, 128, 512, 1024
+  devices: [0, 1]
+  batch_size: 64
+  optim: "adamw"
+  num_workers: 8
+  lr: 0.0005
+  evaluate: 1
+  use_ddp: false
+  scheduler: 'consine'
+  samples_num: 8
+  resume: false
+  masked_ratio: 0.
+  mask_patch_size: 4
+
+consistency:
+  continous: True
+  c_dim: 10
+  in_channel: 3
+  ch_mult: [1, 2, 4, 8]
+  block_size: 8
+  basic_hidden_dim: 32
+  latent_ch: 8
+  num_res_blocks: 3
+  kld_weight: 1.0
+  alpha: 1.0
+  consistency_encoder_path: '/data/home/scv9554/run/guanzhouke/my_experiments/cvpr24/src/experiments/office31/consist-cont-c10-m0.7/best-0.305-193-3407.pth'
+
+vspecific:
+  v_dim: 10
+  ch_mult: [1, 2, 4, 8]
+  block_size: 8
+  basic_hidden_dim: 32
+  latent_ch: 10
+  num_res_blocks: 3
+  best_view: 0
+  kld_weight: 0.5
+  
+valid_augmentation:
+  crop_size: 64
