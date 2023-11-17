@@ -1,10 +1,9 @@
 # general setting.
 views: 3
-seed: 1118
+seed: 3407
 wandb: false
 experiment_name: "coil100"
 verbose: false
-note: 'mining consistency'
 project_name: 'CVPR24'
 runtimes: 1
 backbone:
@@ -12,7 +11,7 @@ backbone:
   init_method: 'xavier'
 dataset:
   name: 'coil-100'
-  root: '/data/home/scv9554/run/guanzhouke/my_experiments/MyData'
+  root: 'MyData'
   class_num: 100
 train:
   epochs: 200
@@ -41,7 +40,7 @@ consistency:
   num_res_blocks: 3
   kld_weight: 1.0
   alpha: 1.0
-  consistency_encoder_path: '/data/home/scv9554/run/guanzhouke/my_experiments/cvpr24/src/experiments/coil100/consist-cont-c10-m0.7/best-0.6792-62-4560.pth'
+  consistency_encoder_path: '4560.pth'
 
 vspecific:
   v_dim: 10

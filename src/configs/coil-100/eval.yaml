@@ -4,7 +4,6 @@ seed: 3407
 wandb: false
 experiment_name: "coil100"
 verbose: false
-note: 'mining consistency'
 project_name: 'CVPR24'
 runtimes: 1
 backbone:
@@ -12,7 +11,7 @@ backbone:
   init_method: 'xavier'
 dataset:
   name: 'coil-100'
-  root: '/data/home/scv9554/run/guanzhouke/my_experiments/MyData'
+  root: 'MyData'
   class_num: 100
 train:
   epochs: 200
@@ -54,4 +53,4 @@ valid_augmentation:
   crop_size: 64
 
 eval:
-  model_path: '/data/home/scv9554/run/guanzhouke/my_experiments/cvpr24/src/experiments/coil100/disent-cont/final_model-3407.pth'
+  model_path: 'final_model-3407.pth'

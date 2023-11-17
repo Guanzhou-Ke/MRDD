@@ -4,7 +4,6 @@ seed: 3407
 wandb: false
 experiment_name: "emnist"
 verbose: false
-note: 'mining consistency'
 project_name: 'CVPR24'
 runtimes: 1
 backbone:
@@ -12,7 +11,7 @@ backbone:
   init_method: 'xavier'
 dataset:
   name: 'EdgeMnist'
-  root: '/data/home/scv9554/run/guanzhouke/my_experiments/MyData'
+  root: 'MyData'
   class_num: 10
 train:
   epochs: 200

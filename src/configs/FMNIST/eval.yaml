@@ -12,7 +12,7 @@ backbone:
   init_method: 'xavier'
 dataset:
   name: 'FashionMnist'
-  root: '/data/home/scv9554/run/guanzhouke/my_experiments/MyData'
+  root: 'MyData'
   class_num: 10
 train:
   epochs: 200
@@ -60,5 +60,5 @@ valid_augmentation:
 
 
 eval:
-  model_path: '/data/home/scv9554/run/guanzhouke/my_experiments/cvpr24/src/experiments/fmnist/disent-cont/final_model-6154.pth'
+  model_path: 'final_model-6154.pth'
 

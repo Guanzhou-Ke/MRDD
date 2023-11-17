@@ -1,5 +1,5 @@
 views: 3
-seed: 1118
+seed: 3407
 wandb: false
 experiment_name: "coil20"
 verbose: false
@@ -11,7 +11,7 @@ backbone:
   init_method: 'xavier'
 dataset:
   name: 'coil-20'
-  root: '/data/home/scv9554/run/guanzhouke/my_experiments/MyData'
+  root: 'MyData'
   class_num: 20
 train:
   epochs: 200
@@ -41,7 +41,7 @@ consistency:
   num_res_blocks: 3
   kld_weight: 1.0
   alpha: 1.0
-  consistency_encoder_path: '/data/home/scv9554/run/guanzhouke/my_experiments/cvpr24/src/experiments/coil20/consist-c10-m0.7/final_model-3407.pth'
+  consistency_encoder_path: 'final_model-3407.pth'
 
 vspecific:
   v_dim: 10

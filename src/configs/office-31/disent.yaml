@@ -12,7 +12,7 @@ backbone:
   init_method: 'xavier'
 dataset:
   name: 'office-31'
-  root: '/data/home/scv9554/run/guanzhouke/my_experiments/MyData/Office31'
+  root: 'MyData/Office31'
   class_num: 31
 train:
   epochs: 200
@@ -41,7 +41,7 @@ consistency:
   num_res_blocks: 3
   kld_weight: 1.0
   alpha: 1.0
-  consistency_encoder_path: '/data/home/scv9554/run/guanzhouke/my_experiments/cvpr24/src/experiments/office31/consist-cont-c10-m0.7/best-0.305-193-3407.pth'
+  consistency_encoder_path: '3407.pth'
 
 vspecific:
   v_dim: 10

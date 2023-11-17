@@ -3,7 +3,7 @@ seed: 3407
 wandb: false
 experiment_name: "coil20"
 verbose: false
-note: 'disentangling'
+note: 'eval'
 project_name: 'CVPR24'
 runtimes: 5
 backbone:
@@ -11,7 +11,7 @@ backbone:
   init_method: 'xavier'
 dataset:
   name: 'coil-20'
-  root: '/data/home/scv9554/run/guanzhouke/my_experiments/MyData'
+  root: 'MyData'
   class_num: 20
 train:
   epochs: 200
@@ -58,5 +58,5 @@ valid_augmentation:
 
 
 eval:
-  model_path: '/data/home/scv9554/run/guanzhouke/my_experiments/cvpr24/src/experiments/coil20/disent-cont/final_model-5427.pth'
+  model_path: 'final_model.pth'
 

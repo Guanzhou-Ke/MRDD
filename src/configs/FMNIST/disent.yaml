@@ -12,7 +12,7 @@ backbone:
   init_method: 'xavier'
 dataset:
   name: 'FashionMnist'
-  root: '/data/home/scv9554/run/guanzhouke/my_experiments/MyData'
+  root: 'MyData'
   class_num: 10
 train:
   epochs: 200
@@ -42,7 +42,7 @@ consistency:
   num_res_blocks: 3
   kld_weight: 0.1
   alpha: 1.0
-  consistency_encoder_path: '/data/home/scv9554/run/guanzhouke/my_experiments/cvpr24/src/experiments/fmnist/consist-c10-m0.8/final_model-8527.pth'
+  consistency_encoder_path: 'final_model-8527.pth'
 
 vspecific:
   v_dim: 10

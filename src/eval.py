@@ -16,7 +16,7 @@ from tqdm import tqdm
 from torchinfo import summary
 from scipy.optimize import linear_sum_assignment
 from configs.basic_config import get_cfg
-from models.mymodel import MyModel
+from models.mrdd import MRDD
 from sklearn import metrics
 from utils.datatool import (get_val_transformations,
                       get_train_dataset,
@@ -149,7 +149,7 @@ def main():
     visualization = False
     pic_format = 'pdf'
     model_path = config.eval.model_path
-    model = MyModel(config, consistency_encoder_path=None, device=device)
+    model = MRDD(config, consistency_encoder_path=None, device=device)
     model.load_state_dict(torch.load(model_path, map_location='cpu'))
     
     # summary(model)

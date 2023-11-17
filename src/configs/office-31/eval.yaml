@@ -12,7 +12,7 @@ backbone:
   init_method: 'xavier'
 dataset:
   name: 'office-31'
-  root: '/data/home/scv9554/run/guanzhouke/my_experiments/MyData/Office31'
+  root: 'MyData/Office31'
   class_num: 31
 train:
   epochs: 200
@@ -54,4 +54,4 @@ valid_augmentation:
   crop_size: 64
 
 eval:
-  model_path: '/data/home/scv9554/run/guanzhouke/my_experiments/cvpr24/src/experiments/office31/disent-cont/final_model-9000.pth'
+  model_path: 'final_model-9000.pth'
