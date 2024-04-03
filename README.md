@@ -1,7 +1,7 @@
 # MRDD
 The official repos for "Rethinking Multi-view Representation Learning via Distilled Disentangling" (MRDD)
 
-![[ArXiv]](https://arxiv.org/abs/2403.10897)
+[[ArXiv]](https://arxiv.org/abs/2403.10897)
 
 :fire:**NOTE**:fire: I am really interested in "how to predict the missing view/modality via disentangling representations.". Please contact me if you have any potential ideas or if you want to discuss this topic with me. Thanks. ( guanzhouk [at] gmail.com or guanzhouk [at] bjtu.edu.cn both could find me. ) If you are also BJTU's student, you could directly face-to-face with me. 
 
