@@ -65,3 +65,22 @@ python eval.py -f ./configs/dataset name/eval.yaml
 
 And fill in the path of pretrained model to `model_path` domain.
 
+## Citation
+
+```bib
+@inproceedings{ke2023disentangling,
+  title={Disentangling multi-view representations beyond inductive bias},
+  author={Ke, Guanzhou and Yu, Yang and Chao, Guoqing and Wang, Xiaoli and Xu, Chenyang and He, Shengfeng},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
+  pages={2582--2590},
+  year={2023}
+}
+
+@article{ke2024rethinking,
+  title={Rethinking Multi-view Representation Learning via Distilled Disentangling},
+  author={Ke, Guanzhou and Wang, Bo and Wang, Xiaoli and He, Shengfeng},
+  journal={arXiv preprint arXiv:2403.10897},
+  year={2024}
+}
+```
+
